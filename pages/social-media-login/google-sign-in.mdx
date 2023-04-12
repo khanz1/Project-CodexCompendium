@@ -1,0 +1,81 @@
+# Google Sign In
+
+## Objectives
+
+- Know how social login works
+- Implement social login
+- Understand the benefits of social login
+
+## Agenda
+
+- Setup Account Google Sign In
+- Demo (Implement Google Sign In and Example)
+
+## Resources
+
+How Google Sign-In Works [https://www.youtube.com/watch?v=Oy5F9h5JqEU&t=193s](https://www.youtube.com/watch?v=Oy5F9h5JqEU&t=193s)
+
+Sign In with Google [https://developers.google.com/identity/gsi/web/guides/overview](https://developers.google.com/identity/gsi/web/guides/overview)
+
+Find Or Create [https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findorcreate](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findorcreate)
+
+## Examples
+
+[CodeCademy](https://www.codecademy.com/)
+
+[Shopee](https://shopee.co.id/buyer/login?next=https%3A%2F%2Fshopee.co.id%2F)
+
+[Kanban App](https://kamvan-ganteng.web.app/)
+
+## DEMO
+
+### 1. Requirements
+
+1. Google Cloud Account
+2. OAuth2 Setup
+3. Credentials: Client ID, Client Secret (depends on which platform you use)
+4. Project Setup
+
+### 2. TODO
+
+1. setup initial project
+2. register google cloud account and create project in google cloud
+3. add google_sign_in_button and event handler in client side
+4. verify google_oauth_token in server side using package `google-auth-library`
+
+   4a. if user is in database
+
+   4b. else create new user
+
+5. create token and send to client side
+6. store token in local storage
+7. logout method
+
+### Setup Google OAuth2
+
+- Go to [https://console.cloud.google.com/](https://console.cloud.google.com/)
+  - if you don't have google cloud account, create one
+- select project in corner left
+  - if you don't have project, create new project in right top button
+  - fill project name and create
+- select credential page in left navbar
+- click `create credential` => `OAuth Client ID`
+- if you don't configure consent screen yet then configure it
+  - fill mandatory data, then save
+  - add scope, just enable user.info `userinfo.email`, `userinfo.name` and `openid`
+  - next until back to dashboard
+- select application type: `Web Application` and fill mandatory data. make sure to add `Authorized JavaScript Origin`, if you are in dev mode just add `http://localhost` and `http://localhost:<port>`
+- copy and save CLIENT_ID given by google and add to your app
+
+### Server Response
+
+```js
+status = 200;
+body = {
+  message: "User <email> found",
+  access_token: "<token>",
+  user: {
+    name: "<name>",
+  },
+};
+```

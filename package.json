@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "khanz1-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Collection of documentation and notes",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/khanz1/khanz1-docs.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Angga Maulana <assistance.xavier@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/khanz1/khanz1-docs/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/khanz1/khanz1-docs#readme",
   "dependencies": {
     "next": "^13.0.6",
+    "next-themes": "^0.2.1",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",

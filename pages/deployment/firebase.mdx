@@ -1,0 +1,33 @@
+# Firebase Deployment
+
+## Client Configuration
+
+- change `BASE_URL` from `http://localhost` to deployed server url
+- build your project and should build to this folder name: `dist` / `www` / `public`
+
+## Firebase CLI
+
+- Install `npm i -g firebase-tools`
+
+## Firebase Account
+
+- register firebase account
+- run `firebase login`
+
+## Firebase App
+
+- create firebase project
+- run `firebase init` / `firebase init hosting`
+
+## Setup environment for deployment
+
+    ```
+    ? What do you want to use as your public directory? **dist**
+    ? Configure as a single-page app (rewrite all urls to /index.html)? **Yes**
+    ? Set up automatic builds and deploys with GitHub? **No**
+    ? File dist/index.html already exists. Overwrite? (y/N) **No**
+    ```
+
+## Firebase Deploy
+
+- run `firebase deploy`
