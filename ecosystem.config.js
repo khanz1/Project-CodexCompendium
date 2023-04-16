@@ -2,8 +2,8 @@ module.exports = {
   apps: [
     {
       name: 'docs.khanz1.dev',
-      script: 'bash',
-      args: '-c "npm install && npm run build && npm start"',
+      script: 'npm install && npm run build && npm start',
+      // args: '-c "npm install && npm run build && npm start"',
       env: {
         NODE_ENV: 'production',
         PORT: 3000,
