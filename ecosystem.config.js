@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'docs.khanz1.dev',
       script: 'npm',
-      args: 'start:prod',
+      args: 'npm run start:prod',
       env: {
         NODE_ENV: 'production',
         PORT: 3000,
