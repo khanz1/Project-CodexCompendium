@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 const config: DocsThemeConfig = {
   logo: (
-    <Image src="/img/realistic-cat.png" alt="Nextra" width={50} height={50} />
+    <Image src="/images/mascot.png" alt="Image of cat" width={50} height={50} />
   ),
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
 
     return (
       <>
-        <link rel="icon" href="/img/realistic-cat.png" />
+        <link rel="icon" href="/images/mascot.ico" />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontMatter.title || "kDocs"} />
         <meta

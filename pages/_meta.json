@@ -1,7 +1,6 @@
 {
   "index": "Homepage",
-  "deployment": "Deployment",
-  "javascript": "JavaScript",
-  "misc": "Misc",
-  "social-media-login": "Social Media Login"
+  "javascript-ecosystem": "Javascript Ecosystem",
+  "dev-challenge": "Developer Challenge",
+  "misc": "Miscellaneous"
 }
